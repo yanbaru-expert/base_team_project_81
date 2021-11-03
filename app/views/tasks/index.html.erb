@@ -2,6 +2,6 @@
 <% @tasks.each do |task| %>
     <p>
         <%= task.title %>
-        <%= task.content %>
+        <%= link_to "詳細", task_path(task.id), method: :get %>
     </p>
 <% end %>
